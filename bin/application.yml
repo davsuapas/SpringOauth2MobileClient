@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      host: 172.17.0.2
+
+github:
+  client:
+    clientId: 231de74e7ee9c722e61e
+    clientSecret: 9a6c457ba0922d7afae2d84736cb514b16128a69
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+
+logging:
+  level:
+    org.springframework.security: DEBUG
