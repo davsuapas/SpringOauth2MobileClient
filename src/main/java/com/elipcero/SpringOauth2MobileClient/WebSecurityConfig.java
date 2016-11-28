@@ -60,12 +60,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		return new ClientResources();
 	}
 
-	@Bean
-	@ConfigurationProperties("facebook")
-	ClientResources facebook() {
-		return new ClientResources();
-	}
-
 	private Filter ssoFilter() {
 		CompositeFilter filter = new CompositeFilter();
 		List<Filter> filters = new ArrayList<>();
